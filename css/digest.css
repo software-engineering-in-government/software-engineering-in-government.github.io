@@ -9,9 +9,9 @@ body {
 
 a {
   text-decoration: none;
-  color: darkred; }
+  color: #8b0000; }
   a:visited {
-    color: firebrick; }
+    color: #b22222; }
   a:hover {
     text-decoration: underline; }
 
@@ -24,13 +24,13 @@ a {
   margin-top: 0; }
 
 .contents ol {
-  color: #777777; }
+  color: #555555; }
 .contents .item-feed-title {
   font-size: 12px; }
   .contents .item-feed-title a {
-    color: #777777; }
+    color: #555555; }
     .contents .item-feed-title a:visited {
-      color: #777777; }
+      color: #555555; }
 .contents .item-published {
   font-size: 12px; }
 
@@ -38,14 +38,14 @@ a {
   font-size: 2.5em;
   margin-bottom: 0; }
 .item .item-header .item-feed-title {
-  color: #777777;
+  color: #555555;
   font-size: 12px; }
   .item .item-header .item-feed-title a {
-    color: #777777; }
+    color: #555555; }
     .item .item-header .item-feed-title a:visited {
-      color: #777777; }
+      color: #555555; }
 .item .item-header .item-published {
-  color: #777777;
+  color: #555555;
   font-size: 12px; }
 .item .item-content,
 .item .item-summary {
@@ -61,3 +61,5 @@ a {
 
 div.feedflare {
   display: none; }
+
+/*# sourceMappingURL=digest.css.map */
