@@ -17,7 +17,10 @@ If a blog doesn't meet those criteria, see if there's a category feed that is mo
 <sup>*</sup>This is not the case for many of the blog.gov.uk blogs. If in doubt, consider who decides what gets published and when. If people outside of the community of practice control that, then don't add it.
 
 ## Running locally
-To build the site locally, install [pluto](https://feedreader.github.io/), and then run `make`.
+To build the site locally:
+1. install [pluto](https://feedreader.github.io/)
+2. install the [digest2 theme](https://github.com/software-engineering-in-government/planet-digest)
+3. run `make`
 
 ## Licence
 All code is licenced under the [MIT licence](https://opensource.org/licenses/MIT).
