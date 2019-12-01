@@ -1,4 +1,4 @@
-# UK Gov Tech Bloggers
+# Software engineering in government community blog
 
 A [blogoweb](https://xkcd.com/181/) of stuff relevant to the software engineering community of practice 👾
 
