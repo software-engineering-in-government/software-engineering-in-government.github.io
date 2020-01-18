@@ -39,3 +39,15 @@ jobs:
           branch: master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Commits from secrets.GITHUB_TOKEN do not trigger Github pages builds on public repos
+      # see discussion here: https://github.community/t5/GitHub-Actions/Github-action-not-triggering-gh-pages-upon-push/td-p/26869/highlight/true
+      # This is a workaround using a seperate deploy key.
+      - name: Publish to Github pages
+        uses: peaceiris/actions-gh-pages@v2
+        env:
+          ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          # PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_BRANCH: master
+          PUBLISH_DIR: .
