@@ -1,0 +1,41 @@
+# https://help.github.com/en/actions/automating-your-workflow-with-github-actions/workflow-syntax-for-github-actions
+
+name: Fetch blog posts
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    #           ┌───────────── minute (0 - 59)
+    #           │  ┌───────────── hour (0 - 23)
+    #           │  │ ┌───────────── day of the month (1 - 31)
+    #           │  │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+    #           │  │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+    #           │  │ │ │ │
+    #           │  │ │ │ │
+    #           │  │ │ │ │
+    - cron:  '*/5 * * * *'
+
+jobs:
+  fetch_blogs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-ruby@v1
+
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+
+      - name: "Fetch new blog posts"
+        run: |
+          sudo apt-get -yqq install libsqlite3-dev
+          gem install pluto
+          git clone git://github.com/software-engineering-in-government/planet-digest.git ~/.pluto/planet-digest
+          make
+
+      - name: Commit changed files
+        uses: stefanzweifel/git-auto-commit-action@v2.5.0
+        with:
+          commit_message: Fetch new blog posts
+          branch: master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
