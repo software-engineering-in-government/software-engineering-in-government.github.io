@@ -1,6 +1,7 @@
 # Software engineering in government community blog
+![Github actions status badge](https://github.com/software-engineering-in-government/software-engineering-in-government.github.io/workflows/Fetch%20blog%20posts/badge.svg)
 
-A [blogoweb](https://xkcd.com/181/) of stuff relevant to the software engineering community of practice 👾
+A blog aggregator for stuff relevant to the software engineering community of practice 👾
 
 ## How to add content
 To add content, add a new section to [planet.ini](./planet.ini), and raise a pull request.
