@@ -24,22 +24,22 @@
 
         
           <li>
-              <a href='#post-1'>Reporting back on our Tech Talks: Interoperability and open standards event</a>
-              <span class='item-feed-title'>
-                &bull; <a href='https://technology.blog.gov.uk/category/open-standards/'>Technology in government</a>
-              </span>
-              <span class='item-published'>
-                &bull;  6 days ago
-              </span>
-          </li>
-        
-          <li>
-              <a href='#post-2'>Why the GOV.UK Design System team changed the input type for numbers</a>
+              <a href='#post-1'>Why the GOV.UK Design System team changed the input type for numbers</a>
               <span class='item-feed-title'>
                 &bull; <a href='https://technology.blog.gov.uk/category/open-standards/'>Technology in government</a>
               </span>
               <span class='item-published'>
                 &bull;  3 days ago
+              </span>
+          </li>
+        
+          <li>
+              <a href='#post-2'>Reporting back on our Tech Talks: Interoperability and open standards event</a>
+              <span class='item-feed-title'>
+                &bull; <a href='https://technology.blog.gov.uk/category/open-standards/'>Technology in government</a>
+              </span>
+              <span class='item-published'>
+                &bull;  6 days ago
               </span>
           </li>
         
@@ -204,6 +204,71 @@
           <header class='item-header'>
             <h2>
               <!-- 1.  -->
+              <a href='https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/'>Why the GOV.UK Design System team changed the input type for numbers</a>
+            </h2>
+
+            <span class='item-feed-title'>
+            <a href='https://technology.blog.gov.uk/category/open-standards/'>Technology in government</a>  &bull;
+            </span>
+            <span class='item-published'>
+              Monday February 24, 2020 @ 11:37 &bull;
+              3 days ago
+            </span>
+          </header>
+
+          <div class='item-body'>
+            <div class='item-content item-summary'>
+            <!--
+              note: content goes first; than try summary
+            -->
+            
+              <p><img class="aligncenter wp-image-4460 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input.jpg" alt="A screenshot of the new number input guidance" width="613" height="420" srcset="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input.jpg 613w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input-300x206.jpg 300w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input-435x298.jpg 435w" sizes="(max-width: 613px) 100vw, 613px" /></p>
+<p><span style="font-weight: 400">To provide users with a good service, government organisations usually need to collect data. Lots of data. The GOV.UK Design System team creates patterns and components that let users enter their data in an easy and accessible way. The last thing we want to do is create barriers to users completing a task and force them to find an alternative method of using the service, such as phoning a helpline. </span></p>
+<p><span style="font-weight: 400">Numbers are one of the most commonly asked for pieces of data, typically used in dates. We know from user research that some users prefer the large buttoned number keyboard (resembling a telephone keypad) for entering numbers on mobile. Until now, the GOV.UK Design System date input component used the HTML element <code>&lt;input type=”number”&gt;</code> to provide this number keypad when a user enters dates.</span></p>
+<div id="attachment_4462" style="width: 522px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4462" class="wp-image-4462 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad.jpg" alt="A large buttoned keypad used on Android devices" width="512" height="351" srcset="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad.jpg 512w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad-300x206.jpg 300w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad-435x298.jpg 435w" sizes="(max-width: 512px) 100vw, 512px" /><p id="caption-attachment-4462" class="wp-caption-text">Large buttoned, easy to use number keypad on Android</p></div>
+<p><span style="font-weight: 400">However, we recently moved away from <code>&lt;input type=”number”&gt;</code> to <code>&lt;input type=”text” inputmode=”numeric” pattern="[0-9]*"&gt;</code> and published new </span><a href="https://design-system.service.gov.uk/components/text-input/#numbers"><span style="font-weight: 400">guidance on how to ask users for numbers</span></a><span style="font-weight: 400">.</span></p>
+<h2><b>Why type=number is problematic</b></h2>
+<p><span style="font-weight: 400">Although we have user research from 2017 that didn’t flag any major issues with <code>&lt;input type=”number”&gt;</code>, we identified many usability problems with this input type.</span></p>
+<h3><b>1. Accessibility</b></h3>
+<p><span style="font-weight: 400">We found that <code>&lt;input type=”number”&gt;</code> :</span></p>
+<ul>
+<li style="font-weight: 400"><span style="font-weight: 400">cannot be <a href="https://github.com/alphagov/reported-bugs/issues/34">dictated or selected when using Dragon Naturally Speaking</a></span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">appears as </span><a href="https://github.com/alphagov/reported-bugs/issues/41"><span style="font-weight: 400">unlabeled in NVDA's element list</span></a></li>
+<li style="font-weight: 400"><span style="font-weight: 400">appears as a <a href="https://github.com/nvaccess/nvda/issues/9675#issuecomment-499977041">spin button in NVDA's object navigation, which has an edit field and two buttons inside</a></span> <span style="font-weight: 400">- those buttons are unlabeled, but decrease/increase the value</span></li>
+<li style="font-weight: 400"><span style="font-weight: 400">is reported as </span><a href="https://github.com/nvaccess/nvda/issues/9675#issuecomment-499977041"><span style="font-weight: 400">unlabeled edit field</span></a><span style="font-weight: 400"> when using nvda+tab</span></li>
+</ul>
+<h3><b>2. Incrementable numbers</b></h3>
+<p>It's <span style="font-weight: 400">reasonable to assume that <code>&lt;input type=”number”&gt;</code> can be used for collecting any numeric data: it contains the word “number”, after all. A <a href="https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)">note in the HTML specification</a> states that <code>&lt;input type=”number”&gt;</code> is “not appropriate for input that happens to only consist of numbers but isn't strictly speaking a number”.</span></p>
+<p><span style="font-weight: 400">This means that <code>&lt;input type=”number”&gt;</code> can only be used for incrementable numbers, such as dates or the number of people in a household. Using <code>&lt;input type=”number”&gt;</code> for collecting numbers that are not incrementable can cause problems with browsers validating them in that way.</span></p>
+<p><span style="font-weight: 400">For example, browsers attempt to round large numbers when incrementing or decrementing (pressing up or down key), and in the case of very large numbers they are converted to exponential notation.</span></p>
+<div id="attachment_4463" style="width: 493px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4463" class="wp-image-4463 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/reference_number.gif" alt="A gif of numbers changing when a user presses the up or down arrow" width="483" height="147" /><p id="caption-attachment-4463" class="wp-caption-text">Chrome 79.0: type=number displays large numbers in exponential format if user presses the up or down arrows on their keyboard.</p></div>
+<p><span style="font-weight: 400">Once the number is parsed by the browser as an exponent, as shown above, and possibly by mistake, t</span><span style="font-weight: 400">he </span><span style="font-weight: 400">action cannot be reversed by the user. This could confuse users. </span></p>
+<p><span style="font-weight: 400">If users access your site using older versions of Safari, <code>&lt;input type=”number”&gt;</code> can also be problematic when collecting values of 16 or more digits. In Safari 6, the browser rounds the number when a user leaves the field, so no mistake with up or down keys is required.</span></p>
+<div id="attachment_4465" style="width: 583px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4465" class="wp-image-4465 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/safari-6-type-number-bug.gif" alt="A gif of Safari 6 rounding a number down" width="573" height="359" /><p id="caption-attachment-4465" class="wp-caption-text">Safari 6 rounds the last digit on blur</p></div>
+<p><span style="font-weight: 400">Safari 5.1 attempts to make values with at least 16 digits more readable by inserting commas.</span></p>
+<div id="attachment_4464" style="width: 583px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4464" class="wp-image-4464 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/safari-5.1-type-number-bug.gif" alt="A gif of Safari adding commas into a 16 digit credit card number" width="573" height="359" /><p id="caption-attachment-4464" class="wp-caption-text">Safari 5.1 attempting a more human readable number on blur</p></div>
+<h3><b>3. Letters </b></h3>
+<p><span style="font-weight: 400">The </span><a href="https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)"><span style="font-weight: 400">HTML spec</span></a><span style="font-weight: 400"> states that when using <code>&lt;input type=”number”&gt;</code>, “user agents must not allow the user to set the value to a non-empty string that is not a valid floating-point number”. The web and Android versions of Chrome implement this by silently discarding all letter input except the letter ‘e’.</span></p>
+<p>This means <a href="https://github.com/w3c/html/issues/1355"><span style="font-weight: 400">users are not given feedback</span></a><span style="font-weight: 400"> on what type of characters </span><span style="font-weight: 400"><code>&lt;input type=”number”&gt;</code></span><span style="font-weight: 400"> accepts, and assistive technologies don’t alert the user that their input has been silently discarded.</span></p>
+<h3><b>4. Scrolling </b></h3>
+<p><span style="font-weight: 400">Users can accidentally increase or decrease the number using the scroll wheel on the mouse or the scroll gesture on their trackpad. This feature can be useful when collecting countable data but bad if entering data such as passport numbers.</span></p>
+<h2><b>The solution</b></h2>
+<p><span style="font-weight: 400">Using <code>&lt;input type=”text” inputmode=”numeric” pattern="[0-9]*"&gt;</code> allows for a degree of separation between how the user enters data (“input mode”), what the browser expects the user input to contain (type equals number), and potentially how it tries to validate it. </span></p>
+<p><span style="font-weight: 400">Prior to 2019 there wasn’t enough browser support, especially on mobile devices, for us to feel confident in rolling this out instead of using <code>&lt;input type=”number”&gt;</code>. However the <code>inputmode</code> attribute is now supported by all the <a href="https://www.gov.uk/service-manual/technology/designing-for-different-browsers-and-devices#browsers-to-test-in">mobile browsers we test in</a>.</span></p>
+<p><span style="font-weight: 400">We still include the <code>pattern</code> attribute for </span><a href="https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html"><span style="font-weight: 400">backwards compatibility with older iOS devices</span></a><span style="font-weight: 400">. </span></p>
+<p><span style="font-weight: 400">We’ve now updated the </span><a href="https://design-system.service.gov.uk/components/date-input/"><span style="font-weight: 400">date input component </span></a><span style="font-weight: 400">and the </span><a href="https://design-system.service.gov.uk/patterns/bank-details/"><span style="font-weight: 400">rest of the relevant patterns</span></a><span style="font-weight: 400">.</span></p>
+<p><span style="font-weight: 400">We’ve also published some </span><a href="https://design-system.service.gov.uk/components/text-input/#numbers"><span style="font-weight: 400">guidance</span></a><span style="font-weight: 400"> to help users to understand how to collect numbers in HTML forms.</span></p>
+<p><span style="font-weight: 400">Finally, we’ve proposed a change to the HTML spec guidance to cross reference <code>inputmode</code> when </span><a href="https://html.spec.whatwg.org/multipage/input.html#when-number-is-not-appropriate"><span style="font-weight: 400">using <code>&lt;input type=”text”&gt;</code> with content that is only numbers</span></a><span style="font-weight: 400">. </span></p>
+<p><span style="font-weight: 400">You can take a look at the </span><a href="https://design-system.service.gov.uk/community/backlog/"><span style="font-weight: 400">GOV.UK Design System backlog</span></a><span style="font-weight: 400"> to see what else we’re working on.</span></p>
+            
+            </div>
+          </div>
+        </article>
+      
+        <article id="post-2" class='item'>
+          <header class='item-header'>
+            <h2>
+              <!-- 2.  -->
               <a href='https://technology.blog.gov.uk/2020/02/21/reporting-back-on-our-tech-talks-interoperability-and-open-standards-event/'>Reporting back on our Tech Talks: Interoperability and open standards event</a>
             </h2>
 
@@ -246,73 +311,6 @@
 <p><img class="alignnone wp-image-4442 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/tweet_api_event.jpg" alt="Tweet from Daniel Appelquist that says &quot;One of the best insights from @kinlane's talk on Open APIs at today's GDS tech talk was the importance of stories &amp; storytelling in building &amp; maintaining an ecosystem around APIs in any organisation. Storytelling is such an important part of the advocacy toolkit – in any area.&quot;" width="591" height="306" srcset="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/tweet_api_event.jpg 591w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/tweet_api_event-300x155.jpg 300w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/tweet_api_event-435x225.jpg 435w" sizes="(max-width: 591px) 100vw, 591px" /></p>
 <h2><span style="font-weight: 400"><strong>Come along to our next data exchange event</strong></span></h2>
 <p><span style="font-weight: 400">We are holding an event on 16 March in London with the National Archives to discuss long-term data management. You can find <a href="https://www.eventbrite.co.uk/e/community-meet-up-manage-your-data-before-it-manages-you-tickets-94261549833">more information and sign up via our Eventbrite page</a>.</span></p>
-            
-            </div>
-          </div>
-        </article>
-      
-        <article id="post-2" class='item'>
-          <header class='item-header'>
-            <h2>
-              <!-- 2.  -->
-              <a href='https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/'>Why the GOV.UK Design System team changed the input type for numbers</a>
-            </h2>
-
-            <span class='item-feed-title'>
-            <a href='https://technology.blog.gov.uk/category/open-standards/'>Technology in government</a>  &bull;
-            </span>
-            <span class='item-published'>
-              Monday February 24, 2020 @ 11:37 &bull;
-              3 days ago
-            </span>
-          </header>
-
-          <div class='item-body'>
-            <div class='item-content item-summary'>
-            <!--
-              note: content goes first; than try summary
-            -->
-            
-              <p><img class="aligncenter wp-image-4460 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input.jpg" alt="A screenshot of the new number input guidance" width="613" height="420" srcset="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input.jpg 613w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input-300x206.jpg 300w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/design_system_number_input-435x298.jpg 435w" sizes="(max-width: 613px) 100vw, 613px" /></p>
-<p><span style="font-weight: 400">To provide users with a good service, government organisations usually need to collect data. Lots of data. The GOV.UK Design System team creates patterns and components that let users enter their data in an easy and accessible way. The last thing we want to do is create barriers to users completing a task and force them to find an alternative method of using the service, such as phoning a helpline. </span></p>
-<p><span style="font-weight: 400">Numbers are one of the most commonly asked for pieces of data, typically used in dates. We know from user research that some users prefer the large buttoned number keyboard (resembling a telephone keypad) for entering numbers on mobile. Until now, the GOV.UK Design System date input component used the HTML element <code>&lt;input type=”number”&gt;</code> to provide this number keypad when a user enters dates.</span></p>
-<div id="attachment_4462" style="width: 522px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4462" class="wp-image-4462 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad.jpg" alt="A large buttoned keypad used on Android devices" width="512" height="351" srcset="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad.jpg 512w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad-300x206.jpg 300w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/number_pad-435x298.jpg 435w" sizes="(max-width: 512px) 100vw, 512px" /><p id="caption-attachment-4462" class="wp-caption-text">Large buttoned, easy to use number keypad on Android</p></div>
-<p><span style="font-weight: 400">However, we recently moved away from <code>&lt;input type=”number”&gt;</code> to <code>&lt;input type=”text” inputmode=”numeric” pattern="[0-9]*"&gt;</code> and published new </span><a href="https://design-system.service.gov.uk/components/text-input/#numbers"><span style="font-weight: 400">guidance on how to ask users for numbers</span></a><span style="font-weight: 400">.</span></p>
-<h2><b>Why type=number is problematic</b></h2>
-<p><span style="font-weight: 400">Although we have user research from 2017 that didn’t flag any major issues with <code>&lt;input type=”number”&gt;</code>, we found many usability problems with this input type.</span></p>
-<h3><b>1. Accessibility</b></h3>
-<p><span style="font-weight: 400">Our guidance for collecting numeric data, such as reference numbers, was already set to use <code>&lt;input type=”text”&gt;</code>. This meant that many users would get the qwerty keypad when entering those numbers on mobile.</span></p>
-<p><span style="font-weight: 400">The <code>&lt;input type=”number”&gt;</code> element means numbers:</span></p>
-<ul>
-<li style="font-weight: 400"><span style="font-weight: 400">cannot be dictated or selected when using </span><a href="https://github.com/alphagov/reported-bugs/issues/34"><span style="font-weight: 400">Dragon Naturally Speaking</span></a></li>
-<li style="font-weight: 400"><a href="https://github.com/alphagov/reported-bugs/issues/41"><span style="font-weight: 400">appear as unlabeled in NVDA's element list</span></a></li>
-<li style="font-weight: 400"><span style="font-weight: 400">appear as a spin button in </span><a href="https://github.com/nvaccess/nvda/issues/9675#issuecomment-499977041"><span style="font-weight: 400">NVDA's object navigation, which has an edit field and two buttons inside</span> </a><span style="font-weight: 400">- those buttons are unlabeled, but decrease/increase the value</span></li>
-<li style="font-weight: 400"><span style="font-weight: 400">are reported as </span><a href="https://github.com/nvaccess/nvda/issues/9675#issuecomment-499977041"><span style="font-weight: 400">unlabeled edit fields</span></a><span style="font-weight: 400"> when using nvda+tab</span></li>
-</ul>
-<h3><b>2. Incrementable numbers</b></h3>
-<p><a href="https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)"><span style="font-weight: 400">The HTML specification has an input type called `number`</span></a><span style="font-weight: 400">. The word ‘number’ here makes it sound like the input type could be used for any type of number.</span></p>
-<p><span style="font-weight: 400">But a </span><a href="https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)"><span style="font-weight: 400">note at the end of the specification</span></a><span style="font-weight: 400"> says that <code>&lt;input type=”number”&gt;</code> is “not appropriate for input that happens to only consist of numbers but isn't strictly speaking a number”. This means that <code>&lt;input type=”number”&gt;</code> can only be used for incrementable numbers, not simply anything that has digits. </span></p>
-<p><span style="font-weight: 400">Since </span><span style="font-weight: 400"><code>&lt;input type=”number”&gt;</code></span><span style="font-weight: 400"> shows the large number keypad favoured by users, developers might think it’s suitable to use for any numbers. However, it’s important to follow the recommendation in the specification not to use it for incrementable numbers to avoid problems caused by browsers validating it as such. </span></p>
-<p><span style="font-weight: 400">For example, browsers attempt to round large numbers when incrementing or decrementing (pressing up or down key), and in the case of very large numbers they are converted to exponential notation.</span></p>
-<div id="attachment_4463" style="width: 493px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4463" class="wp-image-4463 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/reference_number.gif" alt="A gif of numbers changing when a user presses the up or down arrow" width="483" height="147" /><p id="caption-attachment-4463" class="wp-caption-text">Chrome 79.0: type=number displays large numbers in exponential format if user presses the up or down arrows on their keyboard.</p></div>
-<p><span style="font-weight: 400">Once the number is parsed by the browser as an exponent, as shown above, and possibly by mistake, as mentioned in </span><a href="https://docs.google.com/document/d/1OSWdmf5gmd72z9wDAwBK0zGJYenfj5YdLuWWb0p6n24/edit#heading=h.kdu1c073wzzu"><span style="font-weight: 400">“Scrolling can cause problems”</span></a><span style="font-weight: 400">, the </span><span style="font-weight: 400">action cannot be reversed by the user, causing potential confusion. </span></p>
-<p><span style="font-weight: 400">If users access your site using older versions of Safari, <code>&lt;input type=”number”&gt;</code> can also be problematic when collecting values of 16 or more digits. In Safari 6, the browser rounds the number when a user leaves the field, so no mistake with up or down keys is required.</span></p>
-<div id="attachment_4465" style="width: 583px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4465" class="wp-image-4465 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/safari-6-type-number-bug.gif" alt="A gif of Safari 6 rounding a number down" width="573" height="359" /><p id="caption-attachment-4465" class="wp-caption-text">Safari 6 rounds the last digit on blur</p></div>
-<p><span style="font-weight: 400">Safari 5.1 attempts to make values with at least 16 digits more readable by inserting commas (although in our test the commas didn’t get submitted in the form data).</span></p>
-<div id="attachment_4464" style="width: 583px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-4464" class="wp-image-4464 size-full" src="https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/02/safari-5.1-type-number-bug.gif" alt="A gif of Safari adding commas into a 16 digit credit card number" width="573" height="359" /><p id="caption-attachment-4464" class="wp-caption-text">Safari 5.1 attempting a more human readable number on blur</p></div>
-<h3><b>3. Letters </b></h3>
-<p><span style="font-weight: 400">The </span><a href="https://html.spec.whatwg.org/multipage/input.html#number-state-(type=number)"><span style="font-weight: 400">HTML spec</span></a><span style="font-weight: 400"> states that “u</span><span style="font-weight: 400">ser agents must not allow the user to set the value to a non-empty string that is not a valid floating-point number”. </span><a href="https://output.jsbin.com/munuvub"><span style="font-weight: 400">In Chrome all letter input is silently discarded except the letter ‘e’</span></a><span style="font-weight: 400">.</span></p>
-<p><a href="https://github.com/w3c/html/issues/1355"><span style="font-weight: 400">Users are not given feedback</span></a><span style="font-weight: 400"> on what type of characters </span><span style="font-weight: 400"><code>&lt;input type=”number”&gt;</code></span><span style="font-weight: 400"> accepts, and assistive technologies don’t alert the user that their input has been silently discarded.</span></p>
-<p><span style="font-weight: 400">The preferred solution is to allow the user to enter their answer, submit the form, and then produce an accessible error message from the server. </span></p>
-<h3><b>4. Scrolling </b></h3>
-<p><span style="font-weight: 400">Users can accidentally increase or decrease the number using the scroll wheel on the mouse or the scroll gesture on their trackpad. This feature can be useful when collecting countable data but bad if entering data such as passport numbers.</span></p>
-<h2><b>The solution</b></h2>
-<p><span style="font-weight: 400">Using <code>&lt;input type=”text” inputmode=”numeric” pattern="[0-9]*"&gt;</code> allows for a degree of separation between how the user enters data (“input mode”), what the browser expects the user input to contain (type equals number), and potentially how it tries to validate it. </span></p>
-<p><span style="font-weight: 400">Prior to 2019 there wasn’t enough browser support, especially on mobile devices, for us to feel confident in rolling this out instead of using type=number. In 2019 iOS and Samsung Internet </span><a href="https://caniuse.com/#search=inputmode"><span style="font-weight: 400">started supporting `inputmode`</span></a><span style="font-weight: 400">.</span></p>
-<p><span style="font-weight: 400">We include the pattern with <code>&lt;input type=”text” inputmode=”numeric” &gt;</code> for backwards compatibility with older iOS devices. Prior to iOS 12.2, </span><a href="https://developer.apple.com/library/archive/documentation/StringsTextFonts/Conceptual/TextAndWebiPhoneOS/KeyboardManagement/KeyboardManagement.html"><span style="font-weight: 400"><code>pattern="[0-9]*"</code> could be used to show the number keypad with <code>&lt;input type=”text”&gt;</code></span></a><span style="font-weight: 400"> on iOS devices. </span></p>
-<p><span style="font-weight: 400">We’ve now updated the </span><a href="https://design-system.service.gov.uk/components/date-input/"><span style="font-weight: 400">date input component </span></a><span style="font-weight: 400">and the </span><a href="https://design-system.service.gov.uk/patterns/bank-details/"><span style="font-weight: 400">rest of the relevant patterns</span></a><span style="font-weight: 400">. </span><span style="font-weight: 400">We’ve also published some </span><a href="https://design-system.service.gov.uk/components/text-input/#numbers"><span style="font-weight: 400">guidance</span></a><span style="font-weight: 400"> to help users to understand how to collect numbers in HTML forms.</span></p>
-<p><span style="font-weight: 400">Finally, we’ve proposed a change to the HTML spec guidance to cross reference `inputmode` when </span><a href="https://html.spec.whatwg.org/multipage/input.html#when-number-is-not-appropriate"><span style="font-weight: 400">using <code>&lt;input type=”text”&gt;</code> with content that is only numbers</span></a><span style="font-weight: 400">. </span></p>
-<p><span style="font-weight: 400">You can take a look at the </span><a href="https://design-system.service.gov.uk/community/backlog/"><span style="font-weight: 400">GOV.UK Design System backlog</span></a><span style="font-weight: 400"> to see what else we’re working on.</span></p>
             
             </div>
           </div>
