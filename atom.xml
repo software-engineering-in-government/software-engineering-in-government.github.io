@@ -11,6 +11,67 @@
 
 
 	<entry>
+		<title>At the NHS, we view APIs as services</title>
+		<link href="https://technology.blog.gov.uk/2020/03/06/at-the-nhs-we-view-apis-as-services/" />
+		<link rel="alternate" type="text/html" href="https://technology.blog.gov.uk/2020/03/06/at-the-nhs-we-view-apis-as-services/"/>
+		<id>urn:uuid:https://technology.blog.gov.uk/?p=4495</id>
+		<updated>2020-03-06 11:16:08 UTC</updated>
+		
+		<content type="html">
+			&lt;p&gt;&lt;img class=&quot;aligncenter wp-image-4496 size-full&quot; src=&quot;https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/03/APIs_services_blog.jpg&quot; alt=&quot;A screenshot of the UK government API catalogue&quot; width=&quot;613&quot; height=&quot;390&quot; srcset=&quot;https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/03/APIs_services_blog.jpg 613w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/03/APIs_services_blog-300x191.jpg 300w, https://technology.blog.gov.uk/wp-content/uploads/sites/31/2020/03/APIs_services_blog-435x277.jpg 435w&quot; sizes=&quot;(max-width: 613px) 100vw, 613px&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;The Government Digital Service (GDS) &lt;/span&gt;&lt;a href=&quot;https://www.gov.uk/service-manual&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Service Manual&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt; includes plenty of guidance on &lt;/span&gt;&lt;a href=&quot;https://www.gov.uk/service-manual/agile-delivery&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;agile software delivery&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;, including details of the specific phases of an agile project. Initially it’s not obvious how these phases should apply to delivering APIs. With a bit of interpretation the phases do fit quite well, but this relies on having strong experience in developing APIs. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;NHS Digital is working with GDS, HMRC and DWP to produce some guidance for API delivery teams to sit on GOV.UK. This is intended to help teams delivering APIs make sure they meet user needs. &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Publishing API delivery guidance on GOV.UK&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;In the &lt;/span&gt;&lt;a href=&quot;https://gds.blog.gov.uk/2019/05/09/welcome-to-the-updated-service-standard/&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;latest refresh of the Service Standard&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;, there’s a lot of focus on thinking more holistically about government services. That’s a really positive step. Delivery teams are now being challenged to make sure their &lt;/span&gt;&lt;a href=&quot;https://www.gov.uk/service-manual/service-standard/point-3-join-up-across-channels&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;online service works seamlessly with other channels&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt; such as phone, paper and face to face. An API is another of those channels, but it’s also a service in itself.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;More and more teams are building APIs, often allowing citizens to interact with government services using third-party software. For example, citizens and accountants can submit tax returns via HMRC APIs directly from their accountancy software. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;APIs also allow government services to be incorporated into apps which do other things. In some cases, an API might be the main or only channel into a government service. This is true of &lt;/span&gt;&lt;a href=&quot;https://www.gov.uk/guidance/making-tax-digital-for-vat&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;HMRC’s Making Tax Digital for VAT service&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;, and also for many of NHS Digital’s national healthcare services.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Often APIs are actually the services themselves. For example, GOV.UK Notify and GOV.UK Pay are both well known APIs that serve government users to help them transform citizen-facing services. Both APIs have gone through Service Assessments, and the reports are openly available. For instance, the &lt;/span&gt;&lt;a href=&quot;https://www.gov.uk/service-standard-reports/gov-uk-notify-beta-assessment&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Notify Beta Assessment is here on GOV.UK&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Adding guidance on API agile delivery to GOV.UK will recognise that APIs are services too. It’ll also recognise that agile API delivery teams need different skills than teams working on citizen-facing services, and may need to focus on different areas.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;For example, agile API delivery teams may need:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;technically-minded user researchers to engage with software developers and end users&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;technical writers to produce API documentation and understand how to write for a technical audience, instead of a content designer working on online services content for end-users&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;API designers, such as an experienced developer or an architect with an understanding of the &lt;/span&gt;&lt;a href=&quot;https://technology.blog.gov.uk/2019/10/02/improve-csvs-and-api-descriptions-with-these-open-standards-board-recommendations/&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;OpenAPI spec&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;These teams may also need a product owner, who might also own the online channel. &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;&lt;b&gt;Meeting the needs of APIs users&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Since its creation, a key aim of GDS has been to encourage delivery teams to engage more with users - to understand their needs, test new services with users and to iterate those services until they work really well. Teams delivering online services now have user researchers, service designers, interaction designers, content designers, and technical writers as standard.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;This user needs-first approach doesn’t seem to have been bedded in so well with teams delivering APIs yet. It’s common to come across API teams that haven’t done any user research, and it’s easy to see why. APIs are not intended to be used directly by people - they are used by other systems. However, APIs still have users. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Users of APIs generally fall into 3 categories:&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Government users, for example software developers or technical architects, who understand the government context and who are using government APIs within their services.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Third-party users, usually software developers, who need to design, build, test, and run the software that uses a government API, and who may be working with government APIs for the first time.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;End users of the third-party software, who need to use the complete service via that third-party software.&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;It’s important for teams delivering APIs to engage with these user groups, rather than assume they know what the API should do, build it, deliver it, and then move on to something else. Research to understand API users&#39; needs can improve the design substantially, while reducing the time and cost of integration. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;For example, NHS Digital recently conducted a survey of healthcare software developers. The average rating for ease of integration with NHS Digital APIs was 2 out of 5.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Common pain points included:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;hard to find, poorly written, incomplete, or inconsistent API documentation &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;APIs which were technically complex and hard to integrate with&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;hard to access or not useful test environments &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;labour-intensive or convoluted assurance processes&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;hard to find and slow help and support&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;&lt;b&gt;Drafting the guidance&lt;/b&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;We’re looking for API delivery teams from across government to get involved in this work. We’re &lt;/span&gt;&lt;a href=&quot;https://www.eventbrite.co.uk/e/workshop-delivering-apis-to-meet-user-needs-tickets-95002997523&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;hosting a workshop on 24 April&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt; with the API and Data Exchange Community of Practice to discuss the guidance we’ve been working on with GDS, HMRC and DWP. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;At the basic level, our understanding of API delivery looks like this:&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Discovery: similar to online services, you must define the problem, understand the opportunity, and find users (software developers and end users)&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Alpha: prototype different API specifications and, possibly, a callable sandbox that software developers can test&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Beta: similar to online services, put the API into production but continue to gather feedback from software developers and their end users, especially on data quality, and iterate the service&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Live: declare the API as “stable” but continue to monitor it as usage scales up, and continue to improve it&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Retirement: more complicated for APIs than for online services because you might need to retire a version of an API if you make breaking changes, or manage multiple versions in parallel&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;If you want to help us add more details to our guidance, email &lt;/span&gt;&lt;a href=&quot;mailto:api-data-request@digital.cabinet-office.gov.uk&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;api-data-request@digital.cabinet-office.gov.uk&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;. If you want to attend the workshop ‘Delivering APIs to meet user needs’ on 24 April &lt;/span&gt;&lt;a href=&quot;https://www.eventbrite.co.uk/e/workshop-delivering-apis-to-meet-user-needs-tickets-95002997523&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;you can sign up on our Eventbrite page&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;. &lt;/span&gt;&lt;/p&gt;
+		</content>
+		
+		<author>
+			<name>Technology in government</name>
+		</author>
+	</entry>
+
+	<entry>
 		<title>Why the GOV.UK Design System team changed the input type for numbers</title>
 		<link href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/" />
 		<link rel="alternate" type="text/html" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/"/>
