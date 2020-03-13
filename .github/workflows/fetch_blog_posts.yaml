@@ -12,12 +12,13 @@ on:
     #         │  │   │ │  │
     #         │  │   │ │  │
     #         │  │   │ │  │
-    - cron:  '0 9-17 * * 1-5'
+    #- cron:  '0 9-17 * * 1-5'
+    - cron:  '* 9-17 * * 1-5'
 
 jobs:
   fetch_blogs:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-18.04
+    
     steps:
       - uses: actions/setup-ruby@v1
         with:
@@ -29,6 +30,7 @@ jobs:
 
       - name: "Fetch new blog posts"
         run: |
+          sudo apt-get update
           sudo apt-get -yqq install libsqlite3-dev
           gem install pluto
           gem uninstall pluto-update && gem install pluto-update -v 1.6.3
